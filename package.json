@@ -1,6 +1,6 @@
 {
-  "name": "emojiid",
-  "version": "1.0.0",
+  "name": "emoji-identifier",
+  "version": "1.0.1",
   "description": "Generate fabulous ids",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
