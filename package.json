@@ -1,0 +1,44 @@
+{
+  "name": "emojiid",
+  "version": "1.0.0",
+  "description": "Generate fabulous ids",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig-esm.json",
+    "build:cjs": "tsc -p tsconfig-cjs.json",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilhelmmelkstam/emojiid.git"
+  },
+  "keywords": [
+    "id",
+    "emoji",
+    "unicode"
+  ],
+  "author": "Vilhelm Melkstam <vilhelm.melkstam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vilhelmmelkstam/emojiid/issues"
+  },
+  "homepage": "https://github.com/vilhelmmelkstam/emojiid#readme",
+  "devDependencies": {
+    "@types/jest": "27.4.1",
+    "@typescript-eslint/eslint-plugin": "5.14.0",
+    "@typescript-eslint/parser": "5.14.0",
+    "eslint": "8.10.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-import-resolver-typescript": "2.5.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jest": "26.1.1",
+    "jest": "27.5.1",
+    "ts-jest": "27.1.3",
+    "typescript": "4.6.2"
+  }
+}
