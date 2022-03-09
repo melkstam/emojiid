@@ -1,0 +1,2 @@
+# emojiid
+Generate fabulous ids
