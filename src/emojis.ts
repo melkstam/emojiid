@@ -1392,6 +1392,6 @@ const emojis = [
   "🫶",
   "🫷",
   "🫸",
-];
+] as const;
 
 export default emojis;
