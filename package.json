@@ -1,48 +1,37 @@
 {
-  "name": "emoji-identifier",
-  "version": "1.0.2",
-  "description": "Generate fabulous ids",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc -p tsconfig-esm.json",
-    "build:cjs": "tsc -p tsconfig-cjs.json",
-    "lint": "eslint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vilhelmmelkstam/emojiid.git"
-  },
-  "keywords": [
-    "id",
-    "emoji",
-    "unicode"
-  ],
-  "author": "Vilhelm Melkstam <vilhelm.melkstam@gmail.com>",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "bugs": {
-    "url": "https://github.com/vilhelmmelkstam/emojiid/issues"
-  },
-  "homepage": "https://github.com/vilhelmmelkstam/emojiid#readme",
-  "devDependencies": {
-    "@types/jest": "27.4.1",
-    "@typescript-eslint/eslint-plugin": "5.14.0",
-    "@typescript-eslint/parser": "5.14.0",
-    "eslint": "8.10.0",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-import-resolver-typescript": "2.5.0",
-    "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-jest": "26.1.1",
-    "jest": "27.5.1",
-    "ts-jest": "27.1.3",
-    "typescript": "4.6.2"
-  },
-  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+	"name": "emoji-identifier",
+	"version": "1.0.2",
+	"description": "Generate fabulous ids",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/esm/index.d.ts",
+	"scripts": {
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"build": "npm run build:esm && npm run build:cjs",
+		"build:esm": "tsc -p tsconfig-esm.json",
+		"build:cjs": "tsc -p tsconfig-cjs.json",
+		"lint": "biome check .",
+		"lint:fix": "biome check . --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vilhelmmelkstam/emojiid.git"
+	},
+	"keywords": ["id", "emoji", "unicode"],
+	"author": "Vilhelm Melkstam <vilhelm.melkstam@gmail.com>",
+	"license": "MIT",
+	"files": ["dist"],
+	"bugs": {
+		"url": "https://github.com/vilhelmmelkstam/emojiid/issues"
+	},
+	"homepage": "https://github.com/vilhelmmelkstam/emojiid#readme",
+	"devDependencies": {
+		"@biomejs/biome": "~1.9.4",
+		"@types/jest": "27.4.1",
+		"jest": "27.5.1",
+		"ts-jest": "27.1.3",
+		"typescript": "4.6.2"
+	},
+	"packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }
